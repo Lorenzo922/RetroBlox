@@ -1,102 +1,58 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Roblox 2008 - Página Estilo Antigo</title>
-  <style>
-    body {
-      font-family: 'Verdana', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #e0e0e0;
-      color: #000;
-    }
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 10px 20px;
-      text-align: center;
-      font-size: 24px;
-      font-weight: bold;
-    }
-    nav {
-      background-color: #336699;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      display: flex;
-      justify-content: space-between;
-      margin: 20px;
-    }
-    .sidebar {
-      width: 20%;
-      background-color: #ffffff;
-      padding: 15px;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    .content {
-      width: 75%;
-      background-color: #ffffff;
-      padding: 15px;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+  <title>ROBLOX - Virtual Playworld</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
-  Roblox 2008 - Estilo Antigo
-</header>
-
-<nav>
-  <a href="#">Home</a>
-  <a href="#">Jogos</a>
-  <a href="#">Avatar</a>
-  <a href="#">Fórum</a>
-  <a href="#">Loja</a>
-  <a href="#">Ajuda</a>
-</nav>
-
-<div class="container">
-  <div class="sidebar">
-    <h3>Links Rápidos</h3>
-    <ul>
-      <li><a href="#">Criar Jogo</a></li>
-      <li><a href="#">Meus Itens</a></li>
-      <li><a href="#">Mensagens</a></li>
-      <li><a href="#">Configurações</a></li>
-    </ul>
+  <div id="top-banner">
+    <img src="imagens/banner.png" alt="You Dreamed It, Now Build It!">
   </div>
-  <div class="content">
-    <h2>Bem-vindo ao Roblox 2008!</h2>
-    <p>Explore mundos criados por usuários, personalize seu avatar e interaja com amigos neste estilo retrô do Roblox.</p>
-    <img src="https://web.archive.org/web/20080406180132im_/http://images.roblox.com/web/images/roblox_logo2_2008.gif" alt="Logo do Roblox 2008" width="200">
+
+  <div id="navbar">
+    <img src="imagens/logo.png" alt="ROBLOX Logo" id="logo">
+    <button id="play-now">PLAY NOW</button>
+    <nav>
+      <a href="#">My ROBLOX</a> |
+      <a href="#">Games</a> |
+      <a href="#">Catalog</a> |
+      <a href="#">People</a> |
+      <a href="#">Builders Club</a> |
+      <a href="#">Forum</a> |
+      <a href="#">News</a> |
+      <a href="#">Parents</a> |
+      <a href="#">Help</a>
+    </nav>
   </div>
-</div>
 
-<footer>
-  &copy; 2008 Roblox Corporation. Todos os direitos reservados.
-</footer>
+  <div id="main-content">
+    <div id="login-box">
+      <h3>Member Login</h3>
+      <form>
+        <input type="text" placeholder="Character Name"><br>
+        <input type="password" placeholder="Password"><br>
+        <button type="submit">Login</button>
+        <p><a href="#">Forgot your password?</a></p>
+      </form>
+    </div>
 
+    <div id="features">
+      <h2>ROBLOX Virtual Playworld</h2>
+      <p><strong>ROBLOX is Free!</strong></p>
+      <ul>
+        <li><strong>Build your personal Place</strong><br>Create buildings, traps, and scenery with virtual bricks.</li>
+        <li><strong>Meet new friends online</strong><br>Chat and build together in 3D worlds.</li>
+        <li><strong>Battle in the Brick Arenas</strong><br>Use rockets, slingshots and more. Don't get bloxxed!</li>
+      </ul>
+      <p><img src="imagens/build_it.png" alt="Build It..."></p>
+      <button id="download-btn">FREE - Download and Play!</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>ROBLOX Corp. ©2008. Not affiliated with Lego, Pokémon, etc.<br>
+    <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a> | <a href="#">About Us</a> | <a href="#">Jobs</a></p>
+  </footer>
 </body>
 </html>
